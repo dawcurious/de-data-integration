@@ -1,0 +1,9 @@
+source_system,source_transaction_id,warehouse_transaction_id,checkout_timestamp,customer_id,customer_country,sku,gross_amount_usd,tax_amount_usd,is_refunded,is_deleted
+core,9001,core:9001,2026-01-10 14:05:22,44,US,9921,120.00,12.00,false,false
+core,9002,core:9002,2026-01-10 14:06:01,12,CA,1102,45.50,4.55,false,false
+core,9003,core:9003,2026-01-11 09:12:00,88,US,5541,300.00,30.00,true,false
+core,9005,core:9005,2026-01-11 10:15:00,103,US,8821,75.00,7.50,false,false
+acquired,9001,acquired:9001,2026-01-10 15:30:00,881,,9921,118.80,0.00,false,false
+acquired,9004,acquired:9004,2026-01-11 11:22:10,402,,7721,107.95,0.00,false,true
+acquired,9005,acquired:9005,2026-01-11 12:10:00,713,,8821,75.00,0.00,false,false
+acquired,9008,acquired:9008,2026-01-12 09:05:00,444,,3333,53.34,0.00,false,false

@@ -1,0 +1,5 @@
+source_system,source_transaction_id,reject_reason
+core,9006,invalid_customer_blob
+core,9007,missing_sku
+acquired,9005,duplicate_source_transaction
+acquired,9006,unknown_currency
