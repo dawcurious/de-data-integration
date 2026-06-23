@@ -17,13 +17,10 @@ Use the CSV fixtures in `data/`:
 ## Requirements
 
 - Implement an OOP Python pipeline with `main.py` as the entry point.
-- Use an abstract extractor contract, concrete SQL Server/PostgreSQL extractors,
-  a Snowflake staging loader, and a reusable SQL script runner.
+- Use an abstract extractor contract, concrete SQL Server/PostgreSQL extractors, a Snowflake staging loader, and a reusable SQL script runner.
 - Run locally from the provided CSVs; live SQL Server/PostgreSQL instances are not required.
 - Load staged source data and final transformed outputs into Snowflake.
 - Put Snowflake-native transformations in `src/sql/`.
-- Read Snowflake connection settings from environment variables or a local
-  ignored config file.
 
 ## Transformations To Handle
 
@@ -72,7 +69,7 @@ is_refunded
 ## Project Layout : Feel free to change
 
 ```text
-config/settings.py
+config/dummy.yml
 data/*.csv
 main.py
 src/extractors/base_extractor.py
@@ -105,11 +102,12 @@ python main.py
 
 - Runnable pipeline.
 - Implemented Python modules and SQL scripts.
-- Be ready to explain these tradeoffs in a follow-up
-  technical discussion.
-  * How the design satisfies idempotency, incremental loading, and
-  data quality checks. 
+- Be ready for questions in a follow-up technical discussion like
+  * How the design satisfies idempotency, incremental loading, and data quality checks. 
   * How you handle db credentials
+  * How would your approach change for 100 million rows instead of these CSVs
+  * Python OOP : Why use an abstract BaseExtractor instead of just functions?
+  * Snowflake loading: Would you use row inserts, PUT/stage/COPY INTO, Snowpipe, or external stages? Why?
 
 ## AI Policy
 
