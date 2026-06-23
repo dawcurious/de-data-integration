@@ -112,7 +112,7 @@ python main.py
 
 ## Deliverables and Presentation
 
-- Runnable pipeline.
+- Runnable pipeline that follows best practice
 - Implemented Python modules and SQL scripts.
 - Be ready for questions in a follow-up technical discussion like
   * How the design satisfies idempotency, incremental loading, and data quality checks.
